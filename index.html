@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+<head><머리>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[SAIF] 대사증후군 AI 상담</title>
@@ -471,6 +471,122 @@
             min-width: 100px;
             text-align: center;
         }
+    /* 반응형 디자인 */
+@media (max-width: 1400px) {
+    .slide-title {
+        font-size: 44px;
+    }
+    
+    .slide1 h1 {
+        font-size: 56px;
+    }
+    
+    .feature-card, .example-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ppt-container {
+        height: calc(100vh - 140px);
+    }
+    
+    .slide-content {
+        padding: 80px 40px 40px 40px;
+    }
+    
+    .slide-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .features-grid, .examples-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .effect-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .category-tag {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    
+    .description-text {
+        font-size: 16px;
+    }
+    
+    .feature-title {
+        font-size: 16px;
+    }
+    
+    .feature-desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ppt-container {
+        height: calc(100vh - 120px);
+    }
+    
+    .slide-content {
+        padding: 60px 25px 30px 25px;
+    }
+    
+    .slide-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .slide1 h1 {
+        font-size: 40px;
+    }
+    
+    .slide1 p {
+        font-size: 20px;
+    }
+    
+    .features-grid, .examples-grid, .effect-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .benefit-comparison {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .process-flow {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .process-arrow {
+        transform: rotate(90deg);
+        margin: 5px 0;
+    }
+    
+    .controls {
+        height: 60px;
+        gap: 10px;
+    }
+    
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    .slide-counter {
+        font-size: 14px;
+    }
+    
+    .image-box {
+        padding: 40px 30px;
+    }
+}
     </style>
 </head>
 <body>
